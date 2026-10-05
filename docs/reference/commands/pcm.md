@@ -7,7 +7,7 @@ PCM は、サンプルバンク (PDX ファイル) の音を、ADPCM (MSM6258) �
 ファイルの冒頭に、`#pcmfile` で PDX ファイルを宣言します。
 
 ```text
-#pcmfile "BOS.PDX"
+#pcmfile "SAMPLE.PDX"
 ```
 
 - PDX ファイルは、**開いている MML ファイルと同じフォルダ** からの相対パスで探されます。
@@ -18,7 +18,7 @@ PCM は、サンプルバンク (PDX ファイル) の音を、ADPCM (MSM6258) �
 `CHP1:`〜`CHP8:` で、PCM のチャンネルを書きます。内部では CH12〜CH19 になります。
 
 ```text
-#pcmfile "BOS.PDX"
+#pcmfile "SAMPLE.PDX"
 
 CHP1: v13 L8 n0 n1 n0 n1
 ```
