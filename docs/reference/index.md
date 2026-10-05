@@ -1,6 +1,6 @@
 # コマンドリファレンス
 
-RetroFM-Music Editor 0.13.9 の MML コマンドの一覧です。書き方の基本は [MML ファイルの基本構文](syntax.md)、音源の使い分けは [音源とチャンネル](chips.md) を参照してください。
+RetroFM-Music Editor 0.13.10 の MML コマンドの一覧です。書き方の基本は [MML ファイルの基本構文](syntax.md)、音源の使い分けは [音源とチャンネル](chips.md) を参照してください。
 
 このリファレンスは、標準の **RetroFMEditor独自方言** を説明しています。MXDRV (X68000) 方言と `#dual` 方言は [MXDRV 方言と #dual](mxdrv.md) を参照してください。
 

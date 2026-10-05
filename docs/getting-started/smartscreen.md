@@ -39,5 +39,5 @@ Windows 11 の「スマート アプリ コントロール」が有効になっ�
 [Releases](https://github.com/fuujii256/RetroFMMusicEditor/releases) の各ページに、配布ファイルの SHA-256 ハッシュ値を載せています。PowerShell で次のコマンドを実行し、表示された値が一致するか確認してください。
 
 ```powershell
-Get-FileHash .\RetroFMMusicEditor_0.13.9.zip -Algorithm SHA256
+Get-FileHash .\RetroFMMusicEditor_0.13.10.zip -Algorithm SHA256
 ```
