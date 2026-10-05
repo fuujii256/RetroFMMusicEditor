@@ -1,15 +1,15 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-10-05T01:51:39Z",
+    "generatedAt":  "2026-10-05T02:50:27Z",
     "components":  {
                        "app":  {
-                                   "version":  "0.13.11",
-                                   "url":  "https://github.com/fuujii256/RetroFMMusicEditor/releases/download/v0.13.11/RetroFMMusicEditor_0.13.11.zip",
-                                   "sha256":  "ade5a8c180d0d6c40f99b9f547d51a6423b0374a4b08a19d97d7a2543a6104cc",
-                                   "size":  69833472,
+                                   "version":  "0.13.12",
+                                   "url":  "https://github.com/fuujii256/RetroFMMusicEditor/releases/download/v0.13.12/RetroFMMusicEditor_0.13.12.zip",
+                                   "sha256":  "c5a98040100a69a26db2c1a81465121e61f343ca5f5010fd23deb5ff0a49a6ea",
+                                   "size":  69841727,
                                    "title":  "RetroFM-Music Editor",
-                                   "summary":  "文字の表示を VNStudio に合わせました。",
+                                   "summary":  "新規ファイルのひな形、コマンド説明パネル、default_variant ヘッダを追加しました。",
                                    "notes":  "https://github.com/fuujii256/RetroFMMusicEditor/blob/main/CHANGELOG/app.md",
                                    "license":  "RetroFM-Music Editor EULA"
                                }
