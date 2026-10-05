@@ -1,3 +1,4 @@
 # 配布物とドキュメントの改行コードを変換しない
 *.md text eol=lf
 *.yml text eol=lf
+manifest/** -text

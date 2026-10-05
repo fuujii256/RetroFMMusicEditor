@@ -1,7 +1,7 @@
 # インストール
 
 !!! info "最新版"
-    最新版は [RetroFM-Music Editor 0.13.8](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.8) です (ベータ版)。
+    最新版は [RetroFM-Music Editor 0.13.9](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.9) です (ベータ版)。
 
 ## 動作環境
 
@@ -10,7 +10,7 @@
 
 ## インストールの手順
 
-1. [Releases](https://github.com/fuujii256/RetroFMMusicEditor/releases) から `RetroFMMusicEditor_<バージョン>.zip` をダウンロードします (例: `RetroFMMusicEditor_0.13.8.zip`)。
+1. [Releases](https://github.com/fuujii256/RetroFMMusicEditor/releases) から `RetroFMMusicEditor_<バージョン>.zip` をダウンロードします (例: `RetroFMMusicEditor_0.13.9.zip`)。
 2. **展開する前に**、zip を右クリック →「プロパティ」→「セキュリティ: 許可する」にチェック →「OK」を押します。詳しくは [SmartScreen の警告が出たとき](smartscreen.md) を参照してください。
 3. 好きな場所に展開します。
 4. 展開したフォルダの `NEWFMEditor.App.exe` をダブルクリックすると、エディタが起動します。
@@ -22,7 +22,21 @@ zip には、エディタ本体 (`NEWFMEditor.App.exe`)、サンプル曲 (`MML`
 
 ## 更新
 
-新しい版の zip を別のフォルダに展開してください。設定 (ウィンドウサイズ、表示、開いていたフォルダなど) は引き継がれます。
+0.13.9 以降は、エディタの中から更新できます。
+
+1. 起動時に、新しい版があるかを確認します (1 日に 1 回まで)。新しい版があると、画面右上に **「更新 x.y.z」** ボタンが表示されます。
+2. ボタンを押すと、更新の内容が表示されます。「はい」を押すと、新しい版をダウンロードし、署名と SHA-256 を検証してから、エディタを再起動して更新します。編集中の内容は、先に保存してください。
+3. 設定 (ウィンドウサイズ、表示、開いていたフォルダなど) は、そのまま引き継がれます。自分で編集した `MML` フォルダのファイルは、上書きされません (新しく追加されたサンプルだけが足されます)。
+
+右上の「更新確認」のチェックを外すと、起動時の確認をしなくなります。チェックを入れ直すと、その場で確認します。
+
+更新した版で不具合が出たときは、実行ファイルと同じフォルダにある `NEWFMEditor.App.exe.prev` (1 つ前の版) の名前を元に戻すと、前の版に戻せます。
+
+!!! note "0.13.8 以前をお使いの場合"
+    0.13.8 以前には更新の機能がありません。新しい zip を別のフォルダに展開してください。
+
+!!! note "自動で更新できない場合"
+    `Program Files` など、書き込みのできないフォルダに置いている場合は、自動で更新できません。その場合は、[Releases](https://github.com/fuujii256/RetroFMMusicEditor/releases) から新しい zip をダウンロードして、別のフォルダに展開してください。
 
 ## アンインストール
 

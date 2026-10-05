@@ -30,10 +30,14 @@ Windows 11 の「スマート アプリ コントロール」が有効になっ�
 !!! warning "既知の制限"
     スマート アプリ コントロールが有効な PC では、現在 RetroFM-Music Editor を起動できません。起動するには、Windows セキュリティの「アプリとブラウザー コントロール」→「スマート アプリ コントロール」を **オフ** にする必要があります。一度オフにすると、Windows を再インストールするまで元に戻せない場合があります。オフにするかどうかは、ご自身で判断してください。
 
+## 2 回目以降の更新について
+
+エディタの更新機能でダウンロードした更新では、通常この警告は表示されません。警告が出るのは、最初にブラウザで zip をダウンロードしたときだけです。
+
 ## ハッシュ値の確認 {#hash}
 
 [Releases](https://github.com/fuujii256/RetroFMMusicEditor/releases) の各ページに、配布ファイルの SHA-256 ハッシュ値を載せています。PowerShell で次のコマンドを実行し、表示された値が一致するか確認してください。
 
 ```powershell
-Get-FileHash .\RetroFMMusicEditor_0.13.8.zip -Algorithm SHA256
+Get-FileHash .\RetroFMMusicEditor_0.13.9.zip -Algorithm SHA256
 ```

@@ -4,7 +4,7 @@ RetroFM-Music Editor は、レトロ FM 音源 (YM2413 OPLL / YM2608 OPNA / YM21
 RetroFMEditor独自方言の MML に加えて、MXDRV (X68000) 方言の MML も読み込んで鳴らせます。OPLL・OPM・OPNA は 1 曲の中で同時に使えます。
 
 - **ドキュメント・コマンドリファレンス**: <https://fuujii256.github.io/RetroFMMusicEditor/>
-- **ダウンロード**: [最新版 (0.13.8)](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.8)
+- **ダウンロード**: [最新版 (0.13.9)](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.9)
 - **お問い合わせ・不具合報告**: [しるふぁ工房 お問い合わせページ](https://fuujii256.github.io/sylfa-studio/contact.html)
 
 ## 主な機能
@@ -15,6 +15,7 @@ RetroFMEditor独自方言の MML に加えて、MXDRV (X68000) 方言の MML も
 - 再生位置のシーク、演奏中の MML のハイライト
 - 曲ごとの音源コア音量の指定
 - ウィンドウのサイズ変更・最大化 (サイズは次回起動時に復元)
+- 新しい版の通知と、ボタン 1 つでの更新 (署名と SHA-256 を検証してから適用します)
 
 ## 動作環境
 
@@ -28,6 +29,10 @@ RetroFMEditor独自方言の MML に加えて、MXDRV (X68000) 方言の MML も
 実行ファイルにはコード署名をしていないため、初めて起動するときに Windows の警告が表示されることがあります。
 **zip を展開する前に、zip のプロパティで「許可する」にチェックを入れてください。**
 詳しい手順は [SmartScreen の警告が出たとき](https://fuujii256.github.io/RetroFMMusicEditor/getting-started/smartscreen/) を参照してください。
+
+## 更新の確認について
+
+起動時に、このリポジトリの更新情報 (`manifest/v1/stable.json`) を取得して、新しい版があるかを確認します。送信するのは、通常の HTTPS の取得に伴う情報だけで、MML ファイルや個人情報は送りません。画面右上の「更新確認」のチェックを外すと、起動時の確認をしなくなります。
 
 ## 同梱のサンプル
 
