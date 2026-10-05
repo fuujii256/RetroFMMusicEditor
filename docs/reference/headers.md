@@ -11,6 +11,7 @@
 | `; song_loop=forever\|loop\|1` | すべてのチャンネルを無限ループにする |
 | `; loop_start_tick=<N> loop_period_tick=<M>` | 直後の `CH` の行だけに効く、暗黙のループの位置 |
 | `; initial_frame_delay=<N>` | 曲の頭の無音のフレーム数 |
+| `; default_variant=<0-2>` | `~` を省略した音符に付ける variant (音程テーブルの列)。リズムは対象外 ([音符・休符・オクターブ・音長](commands/notes.md)) |
 | `; channel_start_frame=<ch>:<frame>,...` | チャンネルごとの、発音開始の遅れ |
 
 ## 音色・音量
