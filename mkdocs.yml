@@ -1,0 +1,79 @@
+site_name: RetroFM-Music Editor ドキュメント
+site_description: レトロ FM 音源 MML エディタ RetroFM-Music Editor のコマンドリファレンスと使い方
+site_url: https://fuujii256.github.io/RetroFMMusicEditor/
+repo_url: https://github.com/fuujii256/RetroFMMusicEditor
+repo_name: fuujii256/RetroFMMusicEditor
+edit_uri: ""
+copyright: "&copy; しるふぁ工房"
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: ダークモードに切り替え
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードに切り替え
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra:
+  social:
+    - icon: material/email-outline
+      link: https://fuujii256.github.io/sylfa-studio/contact.html
+      name: お問い合わせ (しるふぁ工房)
+
+nav:
+  - ホーム: index.md
+  - はじめに:
+      - インストール: getting-started/install.md
+      - SmartScreen の警告が出たとき: getting-started/smartscreen.md
+      - 画面と操作: getting-started/screen.md
+      - はじめての曲: getting-started/first-song.md
+  - コマンドリファレンス:
+      - 目次・早見表: reference/index.md
+      - MML ファイルの基本構文: reference/syntax.md
+      - 音源とチャンネル: reference/chips.md
+      - 音符・休符・オクターブ・音長: reference/commands/notes.md
+      - 音量・音色・パン: reference/commands/voice.md
+      - 表現 (エンベロープ・ビブラート・スラー ほか): reference/commands/expression.md
+      - ループ・テンポ: reference/commands/flow.md
+      - リズム: reference/commands/rhythm.md
+      - PSG (エンベロープ・ノイズ): reference/commands/psg.md
+      - PCM (ADPCM / PDX): reference/commands/pcm.md
+      - 生レジスタ書き込み: reference/commands/register.md
+      - 曲ヘッダディレクティブ: reference/headers.md
+      - "MXDRV 方言と #dual": reference/mxdrv.md
+      - 間違えやすい書き方: reference/pitfalls.md
+  - FAQ: faq.md
+  - お問い合わせ: support.md
