@@ -1,6 +1,6 @@
 # コマンドリファレンス
 
-RetroFM-Music Editor 0.13.12 の MML コマンドの一覧です。書き方の基本は [MML ファイルの基本構文](syntax.md)、音源の使い分けは [音源とチャンネル](chips.md) を参照してください。
+RetroFM-Music Editor 0.13.15 の MML コマンドの一覧です。書き方の基本は [MML ファイルの基本構文](syntax.md)、音源の使い分けは [音源とチャンネル](chips.md) を参照してください。
 
 このリファレンスは、標準の **RetroFMEditor独自方言** を説明しています。MXDRV (X68000) 方言と `#dual` 方言は [MXDRV 方言と #dual](mxdrv.md) を参照してください。
 
@@ -58,6 +58,7 @@ RetroFM-Music Editor 0.13.12 の MML コマンドの一覧です。書き方の�
 | `[EV n]` `[EV -]` | PSG のエンベロープの割り当て | [PSG](commands/psg.md) |
 | `[FC xx]` | PSG のノイズ | 同上 |
 | `CHP1:`〜`CHP8:` | PCM のチャンネル | [PCM](commands/pcm.md) |
+| `CHW1:`〜`CHW5:` `[WAVE n]` | SCC チャンネルと波形選択 | [音源とチャンネル](chips.md) |
 | `n<番号>` `F0`〜`F4` `@v<N>` | PCM のサンプル・レート・音量 | 同上 |
 | `#pcmfile "..."` | PDX の宣言 | 同上 |
 
@@ -67,7 +68,7 @@ RetroFM-Music Editor 0.13.12 の MML コマンドの一覧です。書き方の�
 |---|---|---|
 | `; chip=dual\|opna\|opm\|all` | 音源の構成 | [音源とチャンネル](chips.md) |
 | `; role=<名前> hw=<音源>` | チャンネルの役割と音源 | 同上 |
-| `; *_default_vol=<%>` | 音源ごとの音量 | [曲ヘッダディレクティブ](headers.md) |
+| `; *_default_vol=<%>` | 音源ごとの音量 (SCC は `scc_default_vol`) | [曲ヘッダディレクティブ](headers.md) |
 | `; song_loop=forever` | 曲全体を無限ループ | 同上 |
 
 ## ページ一覧

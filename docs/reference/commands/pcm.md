@@ -56,3 +56,18 @@ CHP1: v13 L8 n0 n1 n0 n1
 ## 曲全体の PCM の音量
 
 `; pdx_default_vol=<%>` で、PCM 全体の音量を調整できます ([曲ヘッダディレクティブ](../headers.md))。
+
+## 原音のsample時刻によるPCMイベント
+
+MML tick に丸めず、VGMなどの原音サンプル時刻に合わせてPDXを発音する場合は、CHPチャンネルに`[PCM ...]`イベントを記述します。`; chip=all`と`#pcmfile`が必要で、CHP1〜CHP8を発音先に指定します。指令一覧とループ規則は[曲ヘッダディレクティブ](../headers.md)を参照してください。
+
+```mml
+; chip=all
+#pcmfile "tone.pdx"
+; sample_pcm_rate=44100
+; sample_pcm_total=2473049
+; sample_pcm_loop=46629,2426420
+CHP1: [PCM 46629,0,15,4,3]
+```
+
+`[PCM ...]`の各値は、原音サンプル時刻、PDX番号、音量、再生レート番号(F0〜F4)、パンです。発音先はそのイベントを書いたCHPチャンネルで、同じCHPに`nN`などtick単位のイベントは混在させないでください。イベント時刻は`sample_pcm_rate`の単位です。ループ区間内のイベントは同じ間隔で再発音されます。

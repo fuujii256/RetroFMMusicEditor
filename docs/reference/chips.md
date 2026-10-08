@@ -12,8 +12,9 @@
 | 10 | `RHYTHM_SD` | リズム: スネア + ハイハット |
 | 11 | `RHYTHM_TC` | リズム: シンバル + タム |
 | 12〜19 | PCM 0〜7 | PCM (`CHP1:`〜`CHP8:` で自動的に割り当て) |
+| 21〜25 | `SCC_0`〜`SCC_4` | SCC (`CHW1:`〜`CHW5:`) |
 
-PCM を使わない曲は 12 チャンネル (CH0〜CH11) です。
+PCM を使わない曲は 12 チャンネル (CH0〜CH11) です。SCC パートがある曲は `CHW1:`〜`CHW5:` が内部スロット 21〜25 に割り当てられ、26 枠まで拡張されます。
 
 ## ロールの上書き `role=`
 
@@ -47,7 +48,7 @@ CH4: ...
 | `; chip=opna` | すべてのロールを OPNA (YM2608) で鳴らす |
 | `; chip=opm` | OPM ロールは OPM (YM2151)、それ以外は OPLL |
 | `; chip=dual` | PSG ロールは OPNA の SSG、FM とリズムは OPLL (YM2413) |
-| `; chip=all` | **OPM・OPLL・OPNA を同時に使う** |
+| `; chip=all` | OPM・OPLL・OPNA を同時に使い、SCC パートがあれば追加で混ぜる |
 | (指定なし) | エディタの既定。RetroFM-Music Editor では OPNA |
 
 ### `; chip=all` の割り当て
@@ -59,12 +60,13 @@ CH4: ...
 | `OPM_0`〜`OPM_7` | OPM |
 | `PSG_A`〜`PSG_C` | OPNA (SSG) |
 | `FM_0`〜`FM_5`・リズム | OPLL |
+| `SCC_0`〜`SCC_4` | SCC |
 
 ## チャンネルごとの音源指定 `hw=`
 
-`role=` と同じコメントに `hw=OPLL` / `hw=OPNA` / `hw=OPM` と書くと、そのチャンネルの音源を選べます。**`; chip=all` のときだけ** 有効です。それ以外のチップモードでは、書いても使われません。
+`role=` と同じコメントに `hw=OPLL` / `hw=OPNA` / `hw=OPM` / `hw=SCC` と書くと、そのチャンネルの音源を選べます。SCC パートでは `role=SCC_0`〜`SCC_4` と `hw=SCC` を使い、チャンネル行は `CHW1:`〜`CHW5:` にします。**`; chip=all` のときだけ** 有効です。それ以外のチップモードでは、書いても使われません。
 
-同じ `FM_n` でも、`hw=OPLL` と `hw=OPNA` は別のチャンネルとして同時に鳴らせます。
+同じ `FM_n` でも、`hw=OPLL` と `hw=OPNA` は別のチャンネルとして同時に鳴らせます。標準 SCC では第4音と第5音の波形RAMを共有するため、両方へ異なる波形を書き込むと最後の書き込みが両方に反映されます。
 
 ```text
 ; chip=all
