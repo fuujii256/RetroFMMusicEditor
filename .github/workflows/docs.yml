@@ -1,7 +1,12 @@
 name: docs
 
 on:
-  # 公開するまでは自動実行しない (GitHub Pages が有効になってから、push でも動くように戻す)。
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/docs.yml"
   workflow_dispatch:
 
 permissions:
