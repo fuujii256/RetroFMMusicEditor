@@ -4,7 +4,7 @@ RetroFM-Music Editor は、レトロ FM 音源 (YM2413 OPLL / YM2608 OPNA / YM21
 RetroFMEditor独自方言の MML に加えて、MXDRV (X68000) 方言の MML も読み込んで鳴らせます。OPLL・OPM・OPNA は 1 曲の中で同時に使えます。
 
 - **ドキュメント・コマンドリファレンス**: <https://fuujii256.github.io/RetroFMMusicEditor/>
-- **ダウンロード**: [最新版 (0.13.17)](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.17)
+- **ダウンロード**: [最新版 (0.13.18)](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.18)
 - **お問い合わせ・不具合報告**: [しるふぁ工房 お問い合わせページ](https://fuujii256.github.io/sylfa-studio/contact.html)
 
 ## 主な機能
@@ -13,6 +13,7 @@ RetroFMEditor独自方言の MML に加えて、MXDRV (X68000) 方言の MML も
 - OPLL / OPNA / OPM / PCM (PDX) のチャンネルごとの発音表示、レベルメーター、Solo / Mute
 - 音源ごとの色分け表示 (OPLL 橙・OPM 緑・OPNA 青・PCM 桃)。チャンネルをクリックすると、演奏中の MML 位置へ移動します
 - 再生位置のシーク、演奏中の MML のハイライト
+- MML の音符・休符・演奏コマンドをダブルクリックした位置から、全パートを同期して再生
 - 曲ごとの音源コア音量の指定
 - ウィンドウのサイズ変更・最大化 (サイズは次回起動時に復元)
 - 新しい版の通知と、ボタン 1 つでの更新 (署名と SHA-256 を検証してから適用します)

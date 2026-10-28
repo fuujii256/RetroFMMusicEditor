@@ -1,7 +1,7 @@
 # インストール
 
 !!! info "最新版"
-    最新版は [RetroFM-Music Editor 0.13.17](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.17) です (ベータ版)。
+    最新版は [RetroFM-Music Editor 0.13.18](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.18) です (ベータ版)。
 
 ## 動作環境
 
@@ -10,7 +10,7 @@
 
 ## インストールの手順
 
-1. [Releases](https://github.com/fuujii256/RetroFMMusicEditor/releases) から `RetroFMMusicEditor_<バージョン>.zip` をダウンロードします (例: `RetroFMMusicEditor_0.13.17.zip`)。
+1. [Releases](https://github.com/fuujii256/RetroFMMusicEditor/releases) から `RetroFMMusicEditor_<バージョン>.zip` をダウンロードします (例: `RetroFMMusicEditor_0.13.18.zip`)。
 2. **展開する前に**、zip を右クリック →「プロパティ」→「セキュリティ: 許可する」にチェック →「OK」を押します。詳しくは [SmartScreen の警告が出たとき](smartscreen.md) を参照してください。
 3. 好きな場所に展開します。
 4. 展開したフォルダの `NEWFMEditor.App.exe` をダブルクリックすると、エディタが起動します。
