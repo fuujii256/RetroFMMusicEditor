@@ -1,15 +1,15 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-10-28T04:01:51Z",
+    "generatedAt":  "2026-10-28T06:02:55Z",
     "components":  {
                        "app":  {
-                                   "version":  "0.13.17",
-                                   "url":  "https://github.com/fuujii256/RetroFMMusicEditor/releases/download/v0.13.17/RetroFMMusicEditor_0.13.17.zip",
-                                   "sha256":  "df719324f061e1e2590b12876c6c3780b60d620b5ef04ab1218195d64b24fbb9",
-                                   "size":  69939967,
+                                   "version":  "0.13.18",
+                                   "url":  "https://github.com/fuujii256/RetroFMMusicEditor/releases/download/v0.13.18/RetroFMMusicEditor_0.13.18.zip",
+                                   "sha256":  "ca00a0ff67b95590a30366d468382257f76c4af690e0b40981cab02036b98c44",
+                                   "size":  69945582,
                                    "title":  "RetroFM-Music Editor",
-                                   "summary":  "内部コードの難読化を適用しました。画面・設定・音声再生・自動更新の互換性を確認しています。",
+                                   "summary":  "MML のダブルクリック位置から、未保存の編集を含めて全パートを同期再生できるようになりました。",
                                    "notes":  "https://github.com/fuujii256/RetroFMMusicEditor/blob/main/CHANGELOG/app.md",
                                    "license":  "RetroFM-Music Editor EULA"
                                }
