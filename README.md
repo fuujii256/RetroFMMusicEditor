@@ -1,10 +1,10 @@
 # RetroFM-Music Editor
 
-RetroFM-Music Editor は、レトロ FM 音源 (YM2413 OPLL / YM2608 OPNA / YM2151 OPM / MSM6258 ADPCM) の曲を MML で書き、編集しながらその場で再生できる Windows 用のエディタです。
+RetroFM-Music Editor は、レトロ FM 音源 (YM2413 OPLL / YM2608 OPNA / YM2151 OPM / MSM6258 ADPCM / SCC 波形メモリ音源) の曲を MML で書き、編集しながらその場で再生できる Windows 用のエディタです。
 RetroFMEditor独自方言の MML に加えて、MXDRV (X68000) 方言の MML も読み込んで鳴らせます。OPLL・OPM・OPNA は 1 曲の中で同時に使えます。
 
 - **ドキュメント・コマンドリファレンス**: <https://fuujii256.github.io/RetroFMMusicEditor/>
-- **ダウンロード**: [最新版 (0.13.15)](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.15)
+- **ダウンロード**: [最新版 (0.13.17)](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.17)
 - **お問い合わせ・不具合報告**: [しるふぁ工房 お問い合わせページ](https://fuujii256.github.io/sylfa-studio/contact.html)
 
 ## 主な機能
@@ -16,6 +16,17 @@ RetroFMEditor独自方言の MML に加えて、MXDRV (X68000) 方言の MML も
 - 曲ごとの音源コア音量の指定
 - ウィンドウのサイズ変更・最大化 (サイズは次回起動時に復元)
 - 新しい版の通知と、ボタン 1 つでの更新 (署名と SHA-256 を検証してから適用します)
+
+## 音源パック (任意)
+
+アプリ本体の zip には、音源バンクやサンプル曲を含めていません。
+録音素材を使わずに合成した **RetroFM Drums v1** を別途配布します。
+
+- [音源のみ (12音の PDX)](https://github.com/fuujii256/RetroFMMusicEditor/releases/download/v0.13.17/RetroFM_Drums_v1_Kit.zip)
+- [試奏曲付き (12音の試奏と Shadow Reactor)](https://github.com/fuujii256/RetroFMMusicEditor/releases/download/v0.13.17/RetroFM_Drums_v1_WithExamples.zip)
+
+音源と付属 MML は CC0 です。商用利用、加工、再配布ができ、クレジット表記は不要です。
+[導入手順と使い方](https://fuujii256.github.io/RetroFMMusicEditor/getting-started/sound-kit/) を参照してください。
 
 ## 動作環境
 

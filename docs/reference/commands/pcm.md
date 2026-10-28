@@ -53,6 +53,45 @@ CHP1: v13 L8 n0 n1 n0 n1
 - 96 個のサンプル (`n0`〜`n95`) を持てます。
 - 音声データは、MSM6258 の ADPCM 形式です。
 
+## RetroFM Drums v1（任意の音源パック）
+
+[ダウンロードと導入手順](../../getting-started/sound-kit.md)を参照してください。
+
+録音素材を使わずに合成した12音のPDXです。CC0の条件で、商用利用、加工、ゲームへの同梱、
+PDXそのものの再配布ができます。クレジットは不要です。アプリ本体の再配布条件とは別です。
+利用条件と出典は、パック内の `LICENSE.md` と `PCM_PROVENANCE.md` を参照してください。
+
+バンクをMMLと同じフォルダーに置いて、次のように指定します。
+
+```text
+; chip=all
+; pdx_default_vol=100
+#pcmfile "retrofm_drums_v1.pdx"
+CHP1: [BPM 120] F4 p3 v12 L4 n0 r n2 r
+```
+
+| 番号 | 音 |
+|---|---|
+| n0 / n1 | Kick Deep / Kick Tight |
+| n2 / n3 | Snare Body / Snare Tight |
+| n4 / n5 | Closed Hat / Open Hat |
+| n6 / n7 / n8 | Tom Low / Tom Mid / Tom High |
+| n9 / n10 / n11 | Clap / Crash / Ride |
+
+このバンクは **全音F4（15.625 kHz）** 用です。PDX自体に推奨レートは保存されません。
+F3などで再生すると、音程と長さが変わります。n12〜n95は空です。
+重ねて鳴らす音には別のCHPを使ってください。
+
+サンプル同梱版には、12音の試奏MMLと、SCC 5パート＋PCM 3パートの
+`Shadow_Reactor_Public_v1.mml`（BPM 150、25.6秒ループ）が入っています。
+音源のみの版にはMMLを含みません。
+
+配布zipの `MML/RetroFM-Drums-v1` を展開し、Resourcesから開いてください。
+自動更新は既存のMMLフォルダー内ファイルを上書きしません。
+音が変わる改訂は新しいバンク名・フォルダー名で提供し、既存の版を同名で置き換えません。
+
+外部のPDXも同じ `#pcmfile` 構文で指定できます。その利用・再配布には各素材の条件が適用されます。
+
 ## 曲全体の PCM の音量
 
 `; pdx_default_vol=<%>` で、PCM 全体の音量を調整できます ([曲ヘッダディレクティブ](../headers.md))。

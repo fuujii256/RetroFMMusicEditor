@@ -1,7 +1,7 @@
 # インストール
 
 !!! info "最新版"
-    最新版は [RetroFM-Music Editor 0.13.15](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.15) です (ベータ版)。
+    最新版は [RetroFM-Music Editor 0.13.17](https://github.com/fuujii256/RetroFMMusicEditor/releases/tag/v0.13.17) です (ベータ版)。
 
 ## 動作環境
 
@@ -10,7 +10,7 @@
 
 ## インストールの手順
 
-1. [Releases](https://github.com/fuujii256/RetroFMMusicEditor/releases) から `RetroFMMusicEditor_<バージョン>.zip` をダウンロードします (例: `RetroFMMusicEditor_0.13.15.zip`)。
+1. [Releases](https://github.com/fuujii256/RetroFMMusicEditor/releases) から `RetroFMMusicEditor_<バージョン>.zip` をダウンロードします (例: `RetroFMMusicEditor_0.13.17.zip`)。
 2. **展開する前に**、zip を右クリック →「プロパティ」→「セキュリティ: 許可する」にチェック →「OK」を押します。詳しくは [SmartScreen の警告が出たとき](smartscreen.md) を参照してください。
 3. 好きな場所に展開します。
 4. 展開したフォルダの `NEWFMEditor.App.exe` をダブルクリックすると、エディタが起動します。
@@ -19,6 +19,12 @@ zip には、エディタ本体 (`NEWFMEditor.App.exe`)、利用規約 (`EULA.md
 
 !!! note "実行ファイルの名前について"
     実行ファイルの名前は `NEWFMEditor.App.exe` ですが、ウィンドウに表示される名前は「RetroFM-Music Editor」です。
+
+## 音源パックと試奏曲
+
+アプリ本体の zip に音源バンクやサンプル曲は含まれません。
+必要な方は、別配布の [RetroFM Drums v1](sound-kit.md) を同じ場所へ展開してください。
+音源のみの版と、試奏曲付きの版があります。
 
 ## 更新
 

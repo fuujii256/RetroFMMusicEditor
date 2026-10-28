@@ -8,6 +8,7 @@ RetroFM-Music Editor は、レトロ FM 音源の曲を MML で書き、編集�
 | OPNA | YM2608 | FM 6 音 + SSG 3 音 + リズム |
 | OPM | YM2151 | FM 8 音 (X68000 の音源) |
 | PCM | MSM6258 | ADPCM 8 音 (PDX サンプルバンク) |
+| SCC | SCC / SCC+ | 波形メモリ 5 音 |
 
 1 つの曲の中で OPLL・OPM・OPNA を同時に使えます (`; chip=all`)。
 
@@ -17,6 +18,7 @@ RetroFM-Music Editor は、レトロ FM 音源の曲を MML で書き、編集�
 - [SmartScreen の警告が出たとき](getting-started/smartscreen.md)
 - [画面と操作](getting-started/screen.md)
 - [はじめての曲](getting-started/first-song.md)
+- [音源パック RetroFM Drums v1](getting-started/sound-kit.md)
 
 ## リファレンス
 
