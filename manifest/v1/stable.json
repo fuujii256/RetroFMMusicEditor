@@ -1,15 +1,15 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "generatedAt":  "2026-10-08T07:17:23Z",
+    "generatedAt":  "2026-10-28T04:01:51Z",
     "components":  {
                        "app":  {
-                                   "version":  "0.13.15",
-                                   "url":  "https://github.com/fuujii256/RetroFMMusicEditor/releases/download/v0.13.15/RetroFMMusicEditor_0.13.15.zip",
-                                   "sha256":  "9d3a1251f45710c3cabb11628fc16788e798b2336d92cc26eb2875b70f3af692",
-                                   "size":  69890477,
+                                   "version":  "0.13.17",
+                                   "url":  "https://github.com/fuujii256/RetroFMMusicEditor/releases/download/v0.13.17/RetroFMMusicEditor_0.13.17.zip",
+                                   "sha256":  "df719324f061e1e2590b12876c6c3780b60d620b5ef04ab1218195d64b24fbb9",
+                                   "size":  69939967,
                                    "title":  "RetroFM-Music Editor",
-                                   "summary":  "チャンネル一覧の並べ替え、SCC 音源、サンプル時刻の PCM イベントに対応しました。",
+                                   "summary":  "内部コードの難読化を適用しました。画面・設定・音声再生・自動更新の互換性を確認しています。",
                                    "notes":  "https://github.com/fuujii256/RetroFMMusicEditor/blob/main/CHANGELOG/app.md",
                                    "license":  "RetroFM-Music Editor EULA"
                                }
